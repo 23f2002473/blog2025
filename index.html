@@ -77,8 +77,8 @@
                 <!-- Blog post based on README.md content -->
                 <article class="blog-card featured">
                     <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=500&fit=crop" alt="Blog2025">
-                        <div class="blog-category">Featured</div>
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=500&fit=crop" alt="Email Marketing for Bloggers">
+                        <div class="blog-category">Email Marketing</div>
                     </div>
                     <div class="blog-content">
                         <div class="blog-meta">
@@ -88,17 +88,17 @@
                             </span>
                             <span class="blog-read-time">
                                 <i class="fas fa-clock"></i>
-                                2 min read
+                                15 min read
                             </span>
                         </div>
-                        <h3 class="blog-title">Blog2025</h3>
-                        <p class="blog-excerpt">Welcome to Blog2025, your modern digital journal for the future. Discover insights, stories, and inspiration that define the digital age.</p>
+                        <h3 class="blog-title">Email Advertising for Bloggers: Complete Guide to Building and Monetizing Your List</h3>
+                        <p class="blog-excerpt">Master email marketing fundamentals, grow your subscriber base with proven strategies, and monetize your blog through direct audience engagement. Learn advanced techniques, automation, and real case studies that generated thousands in revenue.</p>
                         <div class="blog-footer">
                             <div class="blog-author">
                                 <img src="https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=50&h=50&fit=crop&crop=face" alt="Author" class="author-avatar">
-                                <span class="author-name">Blog2025 Team</span>
+                                <span class="author-name">Marketing Expert</span>
                             </div>
-                            <button class="btn btn-outline">Read More</button>
+                            <button class="btn btn-outline" onclick="openBlogModal('email-marketing-guide')">Read More</button>
                         </div>
                     </div>
                 </article>
@@ -280,6 +280,16 @@
     <button class="back-to-top" id="back-to-top">
         <i class="fas fa-chevron-up"></i>
     </button>
+
+    <!-- Blog Modal -->
+    <div id="blog-modal" class="blog-modal">
+        <div class="blog-modal-content">
+            <span class="blog-modal-close" onclick="closeBlogModal()">&times;</span>
+            <div id="blog-modal-body">
+                <!-- Blog content will be loaded here -->
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

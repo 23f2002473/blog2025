@@ -1093,3 +1093,130 @@ textarea:focus {
     background: white !important;
   }
 }
+
+/* Blog Modal Styles */
+.blog-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-y: auto;
+}
+
+.blog-modal-content {
+    background-color: var(--bg-color);
+    margin: 2% auto;
+    padding: 0;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+    animation: modalSlideIn 0.3s ease-out;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.blog-modal-close {
+    color: var(--text-color);
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    z-index: 1001;
+    transition: color 0.3s ease;
+}
+
+.blog-modal-close:hover {
+    color: var(--accent-color);
+}
+
+#blog-modal-body {
+    padding: 60px 40px 40px;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+#blog-modal-body h1 {
+    color: var(--accent-color);
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#blog-modal-body h2 {
+    color: var(--accent-color);
+    font-size: 1.8rem;
+    margin: 30px 0 15px;
+    font-weight: 600;
+}
+
+#blog-modal-body h3 {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    margin: 25px 0 10px;
+    font-weight: 600;
+}
+
+#blog-modal-body p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+#blog-modal-body ul, #blog-modal-body ol {
+    margin: 15px 0;
+    padding-left: 30px;
+}
+
+#blog-modal-body li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+#blog-modal-body strong {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+#blog-modal-body .case-study {
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.1), rgba(80, 200, 120, 0.1));
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border-left: 4px solid var(--accent-color);
+}
+
+@keyframes modalSlideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-modal-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+    
+    #blog-modal-body {
+        padding: 50px 20px 30px;
+    }
+    
+    #blog-modal-body h1 {
+        font-size: 1.8rem;
+    }
+    
+    #blog-modal-body h2 {
+        font-size: 1.5rem;
+    }
+}
