@@ -74,11 +74,11 @@
             </div>
             
             <div class="blog-grid" id="blog-grid">
-                <!-- Blog post based on README.md content -->
+                <!-- Email Marketing Blog post from README.md -->
                 <article class="blog-card featured">
                     <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=500&fit=crop" alt="Blog2025">
-                        <div class="blog-category">Featured</div>
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=500&fit=crop" alt="Email Marketing for Bloggers">
+                        <div class="blog-category">Marketing</div>
                     </div>
                     <div class="blog-content">
                         <div class="blog-meta">
@@ -88,17 +88,17 @@
                             </span>
                             <span class="blog-read-time">
                                 <i class="fas fa-clock"></i>
-                                2 min read
+                                15 min read
                             </span>
                         </div>
-                        <h3 class="blog-title">Blog2025</h3>
-                        <p class="blog-excerpt">Welcome to Blog2025, your modern digital journal for the future. Discover insights, stories, and inspiration that define the digital age.</p>
+                        <h3 class="blog-title">Complete Guide to Email Marketing for Bloggers</h3>
+                        <p class="blog-excerpt">Master email advertising to establish direct communication with your audience. Learn proven strategies for list building, automation, and monetization that successful bloggers use to grow their income and community.</p>
                         <div class="blog-footer">
                             <div class="blog-author">
-                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=50&h=50&fit=crop&crop=face" alt="Author" class="author-avatar">
-                                <span class="author-name">Blog2025 Team</span>
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" alt="Marketing Expert" class="author-avatar">
+                                <span class="author-name">Marketing Expert</span>
                             </div>
-                            <button class="btn btn-outline">Read More</button>
+                            <button class="btn btn-outline" onclick="showEmailMarketingModal()">Read More</button>
                         </div>
                     </div>
                 </article>
@@ -275,6 +275,19 @@
             </div>
         </div>
     </footer>
+
+    <!-- Email Marketing Modal -->
+    <div class="modal" id="email-marketing-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Complete Guide to Email Marketing for Bloggers</h2>
+                <span class="modal-close" onclick="closeEmailMarketingModal()">&times;</span>
+            </div>
+            <div class="modal-body" id="email-marketing-content">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
 
     <!-- Back to Top Button -->
     <button class="back-to-top" id="back-to-top">
