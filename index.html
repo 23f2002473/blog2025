@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog2025 - Your Modern Digital Journal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Blog<span class="accent">2025</span></h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to <span class="gradient-text">Blog2025</span></h1>
+                <p class="hero-subtitle">Discover stories, insights, and inspiration for the modern world</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('blog')">
+                        <i class="fas fa-book-open"></i>
+                        Explore Posts
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('about')">
+                        <i class="fas fa-user"></i>
+                        About Me
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop&crop=faces" alt="Modern workspace" class="hero-img">
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Featured Posts -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest <span class="accent">Stories</span></h2>
+                <p class="section-subtitle">Discover the latest insights and stories from our digital world</p>
+            </div>
+            
+            <div class="blog-grid" id="blog-grid">
+                <!-- Featured Post -->
+                <article class="blog-card featured">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=500&fit=crop" alt="Technology trends">
+                        <div class="blog-category">Featured</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                January 15, 2025
+                            </span>
+                            <span class="blog-read-time">
+                                <i class="fas fa-clock"></i>
+                                5 min read
+                            </span>
+                        </div>
+                        <h3 class="blog-title">The Future of Web Development in 2025</h3>
+                        <p class="blog-excerpt">Exploring the latest trends, technologies, and methodologies shaping the future of web development. From AI integration to quantum computing...</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=50&h=50&fit=crop&crop=face" alt="Author" class="author-avatar">
+                                <span class="author-name">Sarah Johnson</span>
+                            </div>
+                            <button class="btn btn-outline">Read More</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Regular Posts -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop" alt="Team collaboration">
+                        <div class="blog-category">Productivity</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                January 12, 2025
+                            </span>
+                            <span class="blog-read-time">
+                                <i class="fas fa-clock"></i>
+                                3 min read
+                            </span>
+                        </div>
+                        <h3 class="blog-title">Building Better Remote Teams</h3>
+                        <p class="blog-excerpt">Essential strategies for creating cohesive, productive remote teams in the modern workplace...</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" alt="Author" class="author-avatar">
+                                <span class="author-name">Mike Chen</span>
+                            </div>
+                            <button class="btn btn-outline">Read More</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Data visualization">
+                        <div class="blog-category">Analytics</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                January 10, 2025
+                            </span>
+                            <span class="blog-read-time">
+                                <i class="fas fa-clock"></i>
+                                7 min read
+                            </span>
+                        </div>
+                        <h3 class="blog-title">Data-Driven Decision Making</h3>
+                        <p class="blog-excerpt">How to leverage analytics and data visualization to make better business decisions...</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=50&h=50&fit=crop&crop=face" alt="Author" class="author-avatar">
+                                <span class="author-name">Emma Davis</span>
+                            </div>
+                            <button class="btn btn-outline">Read More</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop" alt="Startup workspace">
+                        <div class="blog-category">Entrepreneurship</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                January 8, 2025
+                            </span>
+                            <span class="blog-read-time">
+                                <i class="fas fa-clock"></i>
+                                4 min read
+                            </span>
+                        </div>
+                        <h3 class="blog-title">Starting Your First Tech Startup</h3>
+                        <p class="blog-excerpt">A comprehensive guide to launching your tech startup, from idea validation to market entry...</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face" alt="Author" class="author-avatar">
+                                <span class="author-name">Alex Thompson</span>
+                            </div>
+                            <button class="btn btn-outline">Read More</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="load-more-container">
+                <button class="btn btn-primary" id="load-more">
+                    <i class="fas fa-plus"></i>
+                    Load More Posts
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2 class="section-title">About <span class="accent">Blog2025</span></h2>
+                    <p class="about-text">
+                        Welcome to Blog2025, where technology meets creativity. Our mission is to share insights, 
+                        stories, and knowledge that inspire and educate our community of digital enthusiasts.
+                    </p>
+                    <p class="about-text">
+                        From cutting-edge development techniques to business strategies, we cover topics that 
+                        matter in today's rapidly evolving digital landscape.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3 class="stat-number" data-target="150">0</h3>
+                            <p class="stat-label">Articles Published</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat-number" data-target="25">0</h3>
+                            <p class="stat-label">Expert Contributors</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat-number" data-target="10000">0</h3>
+                            <p class="stat-label">Monthly Readers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-stack">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=500&fit=crop" alt="Creative workspace" class="stack-img img-1">
+                        <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=500&fit=crop" alt="Modern office" class="stack-img img-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-container">
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title">Stay <span class="accent">Connected</span></h2>
+                    <p class="newsletter-text">Get the latest posts and insights delivered directly to your inbox</p>
+                </div>
+                <form class="newsletter-form" id="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+                <p class="section-subtitle">Have a question or want to collaborate? We'd love to hear from you</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@blog2025.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-send"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Blog<span class="accent">2025</span></h3>
+                    <p>Sharing insights and stories for the digital age.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Productivity</a></li>
+                        <li><a href="#">Analytics</a></li>
+                        <li><a href="#">Entrepreneurship</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">RSS Feed</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Blog2025. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
