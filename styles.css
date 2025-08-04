@@ -378,11 +378,64 @@ input, textarea {
   background: var(--white);
 }
 
+/* Blog Content Main Layout */
+.blog-content-main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+}
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--light);
+}
+
+.blog-main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin: 1rem 0;
+    line-height: 1.2;
+}
+
+.blog-author-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.blog-featured-image {
+    margin: 2rem 0 3rem 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.blog-featured-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.blog-featured-image:hover img {
+    transform: scale(1.02);
+}
+
 .blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
 }
 
 .blog-card {
@@ -1224,4 +1277,82 @@ textarea:focus {
     color: black !important;
     background: white !important;
   }
+}
+
+/* Email Marketing Content */
+.email-marketing-content {
+    padding: 0;
+    line-height: 1.8;
+    color: var(--text);
+}
+
+.email-marketing-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin: 3rem 0 1.5rem 0;
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 0.5rem;
+}
+
+.email-marketing-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin: 2.5rem 0 1rem 0;
+}
+
+.email-marketing-content h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin: 2rem 0 0.8rem 0;
+}
+
+.email-marketing-content p {
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.email-marketing-content ul {
+    margin: 1rem 0 2rem 0;
+    padding-left: 1.5rem;
+}
+
+.email-marketing-content li {
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.email-marketing-content strong {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Responsive Design for Blog Content */
+@media (max-width: 768px) {
+    .blog-content-main {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .blog-main-title {
+        font-size: 2rem;
+    }
+    
+    .blog-featured-image img {
+        height: 250px;
+    }
+    
+    .email-marketing-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .email-marketing-content h3 {
+        font-size: 1.3rem;
+    }
 }
